@@ -1,0 +1,77 @@
+﻿@model IEnumerable<TelefonesAgenda.Models.Contatos>
+
+@{
+    ViewBag.Title = "Contatos";
+}
+
+<h2>Contatos</h2>
+
+<p>
+    @Html.ActionLink("Adicionar", "Create")
+</p>
+<table class="table">
+    <tr>
+        <td>
+            @using (Html.BeginForm("Pesquisar", "Home", FormMethod.Get))
+            {
+                @*<b> Pesquisa: </b>*@
+                @Html.RadioButton("selecionado", "Nome", new { @checked = true }) <text>Nome</text>
+                @Html.RadioButton("selecionado", "Telefone") <text>Telefone</text>
+                @Html.RadioButton("selecionado", "Email") <text>E-mail</text>
+
+                @Html.TextBox("pesquisa") 
+                <input type = "submit" name = "Pesquisar" value = "Pesquisar" class="btn btn-default"/>
+                }
+            </td>
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empresa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Classificacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Telefone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empresa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Endereco)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Classificacao)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

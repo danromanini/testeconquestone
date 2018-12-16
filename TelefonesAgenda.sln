@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefonesAgenda", "TelefonesAgenda\TelefonesAgenda.csproj", "{4EFE2CBE-DBA6-494B-9481-0CAA3AF3BF85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefonesAgenda.Tests", "TelefonesAgenda.Tests\TelefonesAgenda.Tests.csproj", "{AA7E719C-3DE0-4F07-9301-0F6693D695D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EFE2CBE-DBA6-494B-9481-0CAA3AF3BF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFE2CBE-DBA6-494B-9481-0CAA3AF3BF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFE2CBE-DBA6-494B-9481-0CAA3AF3BF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFE2CBE-DBA6-494B-9481-0CAA3AF3BF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7E719C-3DE0-4F07-9301-0F6693D695D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7E719C-3DE0-4F07-9301-0F6693D695D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7E719C-3DE0-4F07-9301-0F6693D695D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7E719C-3DE0-4F07-9301-0F6693D695D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDDE5187-2489-4775-A2B4-33268C858EE8}
+	EndGlobalSection
+EndGlobal
